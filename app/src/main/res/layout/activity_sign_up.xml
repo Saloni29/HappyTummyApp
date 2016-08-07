@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.salonikathuria.happytummyapp.Activity.LoginActivity"
+    android:background="@color/colorPrimary"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="SignUp"
+        android:id="@+id/textView"
+        android:textColor="@color/white"
+        android:fontFamily=""
+        android:focusable="false"
+        android:textSize="30dp"
+        android:textStyle="normal|bold|italic"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="89dp" />
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/view"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textColorHint="@color/white"
+        >
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint_username"
+            android:theme="@style/MyEditTextTheme"
+            android:id="@+id/usernameEditText"
+            android:textColor="@color/white"
+            android:inputType="textCapWords"
+            />
+
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/view2"
+        android:textColorHint="@color/white">
+
+        <EditText
+            android:id="@+id/passwordEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:hint="@string/hint_password"
+            android:layout_alignBottom="@+id/view2"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:theme="@style/MyEditTextTheme"
+            android:textColor="@color/white"
+            />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:textColor="@color/white"
+        android:id="@+id/loginButton"
+        android:layout_marginTop="68dp"
+        android:background="@color/colorPrimaryDark"
+        android:elevation="10dp"
+        android:layout_below="@+id/view2"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="No account yet? Create one"
+        android:id="@+id/textView2"
+        android:layout_marginTop="46dp"
+        android:layout_below="@+id/loginButton"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/white"/>
+
+
+</RelativeLayout>
